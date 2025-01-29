@@ -58,8 +58,8 @@ Before you begin, ensure you have:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/x86-assembly-hello-world.git
-cd x86-assembly-hello-world
+git clone https://github.com/EthanSchoonbee/x86_assembly_hello.git
+cd x86_assembly_hello
 ```
 
 ## 🚀 Building and Running
