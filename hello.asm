@@ -10,7 +10,7 @@
 ;			>> '-o hello.o' specifies the output file
 ;	(2) Link the object file and create an executable
 ;		- use gcc to accomblish this
-;		[gcc -m32 hello.o -o hello]
+;		[gcc -m32 -nostartfiles hello.o -o hello]
 ;			>> '-m32' ensures that you are compiling for a 32-but target
 ;			>> 'hello.o' is your object file from the previous step
 ;			>> '-o hello' specifies the output executable
@@ -47,7 +47,7 @@ section .text
 
 ; Program entry point (as defined in the .start section)
 ; 	- Writes the defined string (.data hello) to the stdout (console)
-_start
+_start:
 	
 	mov eax, 4		; syscall number for sys_write
 
